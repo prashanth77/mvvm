@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner"
+    android:layout_marginBottom="20dp"
+    android:backgroundTint="@android:color/white"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/relative"
+
+        >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:elevation="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+
+    >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/images"
+                    android:id="@+id/image"
+                    android:scaleType="fitXY"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="5dp"
+                    />
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tv_source"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="tv_publishedAt"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adasdasda"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:id="@+id/tv_heading"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/relative"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adasdasda"
+        android:textColor="#575753"
+        android:textSize="16dp"
+        android:layout_below="@+id/tv_heading"
+        android:id="@+id/tv_news"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
